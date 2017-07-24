@@ -19,7 +19,7 @@ class UsersSearch extends Users
     {
         return [
             [['id'], 'integer'],
-            [['username', 'firstname', 'lastname', 'secondname', 'phone', 'role'], 'safe'],
+            [['username', 'firstname', 'lastname', 'secondname', 'phone'], 'safe'],
         ];
     }
 
@@ -66,8 +66,8 @@ class UsersSearch extends Users
             ->andFilterWhere(['like', 'firstname', $this->firstname])
             ->andFilterWhere(['like', 'lastname', $this->lastname])
             ->andFilterWhere(['like', 'secondname', $this->secondname])
-            ->andFilterWhere(['like', 'phone', $this->phone])
-            ->andFilterWhere(['like', 'role', $this->role]);
+            ->andFilterWhere(['like', 'phone', $this->phone]);
+
         return $dataProvider;
     }
 }
