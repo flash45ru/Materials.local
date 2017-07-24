@@ -42,11 +42,11 @@ class Users extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'username' => 'Username',
-            'firstname' => 'Firstname',
-            'lastname' => 'Lastname',
-            'secondname' => 'Secondname',
-            'phone' => 'Phone',
+            'username' => 'Роль',
+            'firstname' => 'Имя',
+            'lastname' => 'Фамилия',
+            'secondname' => 'Отчество',
+            'phone' => 'Телефон',
         ];
     }
 }
