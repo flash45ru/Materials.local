@@ -42,7 +42,7 @@ class Users extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'username' => 'Роль',
+            'username' => 'Должность',
             'firstname' => 'Имя',
             'lastname' => 'Фамилия',
             'secondname' => 'Отчество',
