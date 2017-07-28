@@ -58,12 +58,12 @@ class RbacController extends Controller {
         $auth->addChild($admin, $viewAdminPage);
 
         // Назначаем роль admin пользователю с ID 1
-        $auth->assign($admin, 1);
+        //$auth->assign($admin, 1);
 
         // Назначаем роль «Завхоза» пользователю с ID 2
-        $auth->assign($zavhoz, 2);
+        //$auth->assign($zavhoz, 2);
 
         // Назначаем роль «Рабочего» пользователю с ID 3
-        $auth->assign($worker, 3);
+        //$auth->assign($worker, 3);
     }
 }
