@@ -32,7 +32,7 @@ use yii\widgets\ActiveForm;
         foreach($roles as $key=>$arr) {
             $roles_arr[$key] = $key;
         }
-        var_dump($roles_arr);
+        //var_dump($roles_arr);
     ?>
 
     <?=$form->field($model,'role')->dropDownList($roles_arr,['prompt' => 'Выберите Роль'])?>
